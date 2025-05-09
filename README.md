@@ -88,8 +88,45 @@ car-management-system/
     └── package.json     # Node.js dependencies
 ```
 
-## Important Notes
+## Libraries & References
 
-- The backend must be running for the frontend to function properly
-- JWT tokens expire after 1 hour of inactivity
-- Clear browser cache if you encounter persistent login issues
+### Frontend Dependencies
+
+- **React (v18.2.0)**: JavaScript library for building user interfaces
+  - Documentation: [https://reactjs.org/docs/getting-started.html](https://reactjs.org/docs/getting-started.html)
+
+- **React Router (v6.16.0)**: Routing library for React applications
+  - Documentation: [https://reactrouter.com/en/main](https://reactrouter.com/en/main)
+
+- **Bootstrap (v5.3.2)**: CSS framework for responsive design
+  - Documentation: [https://getbootstrap.com/docs/5.3/getting-started/introduction/](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
+
+- **Bootstrap Icons (v1.11.1)**: Icon library for Bootstrap
+  - Documentation: [https://icons.getbootstrap.com/](https://icons.getbootstrap.com/)
+
+- **React-Toastify (v9.1.3)**: Toast notifications for React applications
+  - Documentation: [https://fkhadra.github.io/react-toastify/introduction/](https://fkhadra.github.io/react-toastify/introduction/)
+
+### Backend Dependencies
+
+- **Flask (v2.3.3)**: Lightweight web framework for Python
+  - Documentation: [https://flask.palletsprojects.com/en/2.3.x/](https://flask.palletsprojects.com/en/2.3.x/)
+
+- **Flask-SQLAlchemy (v3.1.1)**: ORM for database operations
+  - Documentation: [https://flask-sqlalchemy.palletsprojects.com/en/3.1.x/](https://flask-sqlalchemy.palletsprojects.com/en/3.1.x/)
+
+- **Flask-JWT-Extended (v4.5.3)**: JWT authentication for Flask
+  - Documentation: [https://flask-jwt-extended.readthedocs.io/en/stable/](https://flask-jwt-extended.readthedocs.io/en/stable/)
+
+- **Flask-CORS (v4.0.0)**: Cross-Origin Resource Sharing for Flask
+  - Documentation: [https://flask-cors.readthedocs.io/en/latest/](https://flask-cors.readthedocs.io/en/latest/)
+
+- **Werkzeug (v2.3.7)**: WSGI utility library for Python
+  - Documentation: [https://werkzeug.palletsprojects.com/en/2.3.x/](https://werkzeug.palletsprojects.com/en/2.3.x/)
+
+## Troubleshooting
+
+- If you encounter authentication issues, try clearing your browser cache
+- Make sure both backend and frontend servers are running
+- JWT tokens expire after 1 hour, requiring re-authentication
+- For database issues, try deleting `cars.db` and restarting the backend
